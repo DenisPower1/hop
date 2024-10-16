@@ -1,0 +1,15 @@
+{
+ "name": "hop",
+ "version": "1.0.0",
+ "author": "Denis Power",
+ "bugs": {
+  "url": "https://github.com/DenisPower1/hop/issues"
+ },
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/DenisPower1/hop.git"
+ },
+ "devDependencies": {
+  "typescript": "^5.6.3"
+ }
+}
