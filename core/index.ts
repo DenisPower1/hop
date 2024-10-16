@@ -1,7 +1,7 @@
 import { isASpace, isACharacter, mergeAttr, resetElementProps } from "./helpers"
-import type { attrsI, htmlEstructureI, parserSettingI } from "./types"
+import type { attrsI, htmlStructureI, parserSettingI } from "./types"
 
-function runParsing(token: string, element: htmlEstructureI, attribute: attrsI<string>, parserSetting: parserSettingI, html: htmlEstructureI[], index: number) {
+function runParsing(token: string, element: htmlStructureI, attribute: attrsI<string>, parserSetting: parserSettingI, html: htmlStructureI[], index: number) {
     const {
         tagName,
         attrName,
@@ -141,11 +141,11 @@ function runParsing(token: string, element: htmlEstructureI, attribute: attrsI<s
 
 }
 
-export function parseHTML(content: string): htmlEstructureI[] {
+export function parseHTML(content: string): htmlStructureI[] {
 
 
-    const html: htmlEstructureI[] = [];
-    const element: htmlEstructureI = {
+    const html: htmlStructureI[] = [];
+    const element: htmlStructureI = {
         type: null,
         tag: "",
         tagStart: 0,

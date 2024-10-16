@@ -1,7 +1,11 @@
 {
  "name": "hop",
  "version": "1.0.0",
- "author": "Denis Power",
+ "author": {
+    "name": "Denis Power",
+    "email": "denispower02@gmail.com",
+    "url": "https://github.com/DenisPower1"
+ },
  "bugs": {
   "url": "https://github.com/DenisPower1/hop/issues"
  },

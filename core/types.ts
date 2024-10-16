@@ -10,9 +10,9 @@ export interface attrsI<T> {
 
 }
 
-export interface htmlEstructureI {
-    type?: "Tag" | "Text" | null
-    tag?: s,
+export interface htmlStructureI {
+    type: "Tag" | "Text" | null
+    tag: s,
     tagStart: number,
     tagEnd: number,
     attrs?: attrsI<s>[]
@@ -20,11 +20,11 @@ export interface htmlEstructureI {
 }
 
 export interface parserSettingI {
-    tagName?: s,
-    attrName?: s,
-    attrValue?: s,
-    nowLookingAtValue?: boolean,
-    parsingTag?: boolean,
-    parsingAttrs?: boolean,
-    parsingNested?: boolean
+    tagName: s,
+    attrName: s,
+    attrValue: s,
+    nowLookingAtValue: boolean,
+    parsingTag: boolean,
+    parsingAttrs: boolean,
+    parsingNested: boolean
 }

@@ -1,4 +1,4 @@
-import type { attrsI, htmlEstructureI } from "./types";
+import type { attrsI, htmlStructureI } from "./types";
 
 export function isACharacter(arg: string): boolean {
     return /^[A-z]|\d$/i.test(arg);
@@ -8,7 +8,7 @@ export function isASpace(arg: string): boolean {
     return /^\s$/.test(arg);
 }
 
-export function mergeAttr(attribute: attrsI<string>, html: htmlEstructureI, attrValue: string): void {
+export function mergeAttr(attribute: attrsI<string>, html: htmlStructureI, attrValue: string): void {
 
     attribute.value = attrValue
 
@@ -27,7 +27,7 @@ export function hasProps(obj: Object): boolean {
 
 }
 
-export function resetElementProps(element: htmlEstructureI): void {
+export function resetElementProps(element: htmlStructureI): void {
 
     element.tag = "";
     element.type = null;
